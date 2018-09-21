@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Bingo</title>
+
+
+</head>
+
+<style type="text/css">
+
+body {
+  font-family: Tahoma;
+  color: white;
+  background-color: #2E382E;
+}
+  
+.elemContainer {
+  display: flex;
+  justify-content: center;
+  width: 1200px;
+  margin: auto;
+}
+.card {
+  color: #007EA7;
+  background-color: #FFFFFF;
+  margin: 50px;
+  text-align: center;
+  border: 2px solid green;
+  width: 350px;
+  height: 375px;
+}
+.elemBingo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.elemBingo .winner {
+  -webkit-text-decoration: bold;
+          text-decoration: bold;
+  margin-top: 30px;
+  font-size: 2em;
+  text-align: center;
+}
+.number {
+  color: #00A7E1;
+  display: inline-block;
+  margin: 2px;
+  margin-left: 7px;
+  width: 50px;
+  border: 1px solid;
+  font-size: 2.5em;
+}
+.checked {
+  background-color: #A13D63;
+  color: white;
+}
+.elemNumber {
+  color: white;
+  height: 200px;
+  width: 200px;
+  font-size: 9.5em;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.elemButton {
+  margin-top: 20px;
+  width: 80px;
+  height: 50px;
+  border-radius: 10px;
+  font-weight: bold;
+  border: none;
+  background-color: white;
+}
+.elemButton:hover {
+  background-color: #00A7E1;
+  color: white;
+  cursor: pointer;
+}
+
+
+</style>
+
+<body>
+
+  <div class="elemContainer">
+  <div class="card Cartao1">
+    <h1>Fernando</h1>
+  </div>
+  <div class="elemBingo">
+    <h1>Última Pedra</h1>
+    <div class="elemNumber">
+    </div>
+    <button class="elemButton" onClick="newNumber()">Gritar pedra</button>
+  </div>
+  <div class="card Cartao2">
+    <h1>Windows</h1>
+  </div>
+</div>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.5/lodash.min.js'></script>
+  <script  src="js/index.js"></script>
+
+</body>
+
+</html>
